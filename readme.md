@@ -1,10 +1,10 @@
-# bs-html-injector
+# str-bs-html-injector
 
-This fork replaces [dom-compare-temp](https://www.npmjs.com/package/dom-compare-temp) with a forked [dom-compare](https://www.npmjs.com/package/str8r-dom-compare) to support `DocumentFragment` (i.e. `<template></template>`).
+This `bs-html-injector` fork replaces [dom-compare-temp](https://www.npmjs.com/package/dom-compare-temp) with a forked [dom-compare](https://www.npmjs.com/package/str8r-dom-compare) to support `DocumentFragment` (i.e. `<template></template>`). 
 
 ## Updates
 
   - **2024-01-31:**
     
-    Fix for `browser-sync` version 3+
+    Support `browser-sync` version 3+
 
