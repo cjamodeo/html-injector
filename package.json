@@ -39,6 +39,8 @@
   },
   "keywords": [
     "browser sync plugin",
+    "browser sync v3 plugin",
+    "browser sync version 3 plugin",
     "html injection"
   ],
   "browser-sync:ui": {
