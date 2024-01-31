@@ -1,6 +1,6 @@
 {
   "name": "str8r-bs-html-injector",
-  "version": "3.0.3",
+  "version": "3.0.3-update.1",
   "description": "Inject only HTML that has changed.",
   "main": "index.js",
   "repository": {

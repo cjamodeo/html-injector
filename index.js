@@ -218,9 +218,14 @@ module.exports["plugin"] = function (opts, bs) {
 
         // Remove any
         var sockets = bs.io.of(bs.options.getIn(["socket", "namespace"])).sockets;
-        var valid = Object.keys(sockets).map(function (key) {
-            return sockets[key].handshake.headers.referer;
-        });
+        var valid = sockets instanceof Map ? // browserSync 3 returns a Map object
+            Array.from(sockets.keys()).map(function(key) {
+                return sockets.get(key).handshake.headers.referer;
+            }) :
+            Object.keys(sockets).map(function (key) {
+                return sockets[key].handshake.headers.referer;
+            });
+
 
         logger.debug("Cache items: {yellow:%s", Object.keys(htmlInjector.cache).length);
 
